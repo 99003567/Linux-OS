@@ -1,19 +1,6 @@
 #include "mystring.h"
-//#include "myutils.h"
 #include<stdio.h>
 #include<string.h>
-/*
-int main()
-{
-    char city[20] = "HYDERABAD";
-    char town[20] = "MANGALORE";
-    char abc[20];
-    printf("%d\n",mystrlen(city));
-    printf("%s\n",mystrcpy(abc,city));
-    printf("%s\n",mystrcat(city,town));
-    printf("%d",mystrcmp(city,town));
-    return 0;
-}*/
 
 int mystrlen(char* str1)
 {
