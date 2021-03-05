@@ -1,5 +1,5 @@
-Build: sol1.c
-	gcc sol1.c -lpthread 
+Build: semph_stack.c
+	gcc semph_stack.c -lpthread 
 
 run:Build
 	./a.out
