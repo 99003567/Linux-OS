@@ -5,7 +5,7 @@ void main()
     int fifo_write,fifo_read;
     while(strcmp(str,"end")!=0)
     {
-        fifo_write= open("pipeA",O_WRONLY);
+        fifo_write= open("pipe2",O_WRONLY);
         if(fifo_write<0)
             printf("\nError opening pipe");
         else
