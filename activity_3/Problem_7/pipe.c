@@ -1,16 +1,16 @@
 #include"pipes.h"
 void main() 
 {
-    int a1;
-    a1 = mkfifo("pipeA",0666);
-    if(a1<0)
-        printf("\npipeA was not created");
+    int i;
+    i = mkfifo("pipe1",0666);
+    if(i<0)
+        printf("\npipe1 was not created");
     else
-        printf("\npipeA created");
-    int a2;
-    a2 = mkfifo("pipeB",0666);
+        printf("\npipe1 created");
+    int j;
+    j = mkfifo("pipe2",0666);
     if(a2<0)
-        printf("\npipeB was not created");
+        printf("\npipe2 was not created");
     else
-        printf("\npipeB is created\n");
+        printf("\npipe2 is created\n");
 }
