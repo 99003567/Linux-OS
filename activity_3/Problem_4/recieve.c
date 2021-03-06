@@ -11,7 +11,7 @@ int main()
 	attr.mq_msgsize=256;
 	attr.mq_maxmsg=20;
 	mqd_t mqid;
-	mqid=mq_open("/mque",O_RDONLY|O_CREAT,0666,&attr);
+	mqid=mq_open("/msg_que",O_RDONLY|O_CREAT,0666,&attr);
 	if(mqid<0)
 	{
 		perror("mq_open");
