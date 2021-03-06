@@ -1,15 +1,15 @@
-all: server client_5
+all: ser client_5
 
-sol5server: sol5server.c 
-	gcc -o server.out server.c -lrt
+ser: ser.c 
+	gcc -o ser.out ser.c -lrt
 	
-sol5client: sol5client.c 
+client_5: client_5.c 
 	gcc -o client_5.out client_5.c -lrt
 	
-runsol5client:
+runclient_5:
 	./client_5.out
 
-runsol6server:
+runser:
 	./server.out
 
 clean:
